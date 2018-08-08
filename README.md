@@ -30,6 +30,6 @@ About :
         
  Steps to run:
     1.Clone/Download the files with the solution
-    2.Run the solution in Microsoft Visual Studio 2015 or newer.
+    2.Run the solution file (.sln extension) in Microsoft Visual Studio 2015 or newer.
  
     
