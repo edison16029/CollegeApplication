@@ -32,11 +32,7 @@ namespace WindowsFormsApplication4
             
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+     
         private void button2_Click(object sender, EventArgs e)
         {
             Form1 a = new Form1();
