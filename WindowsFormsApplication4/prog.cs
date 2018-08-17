@@ -13,22 +13,23 @@ namespace WindowsFormsApplication4
 {
     public partial class prog : Form
     {
+        int sid;
+        string sname;
         public prog()
         {
             InitializeComponent();
         }
 
+        public prog(int i,string s) : this()
+        {
+            sid = i;
+            sname = s;
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con4 = new SqlConnection(@"Data Source=LAPTOP-0A88PDVH\SQLEXPRESS;Database=college;Integrated Security = True");
-            con4.Open();
-            SqlCommand cmd = new SqlCommand("select * from category where userid='" + textBox1.Text + "'", con4);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            con4.Close();
-
+           
             
         }
 
@@ -39,9 +40,23 @@ namespace WindowsFormsApplication4
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 a = new Form1();
+            student a = new student(sid,sname);
             a.Show();
             this.Hide();
+        }
+
+        private void prog_Load(object sender, EventArgs e)
+        {
+           // MessageBox.Show(sid + " " + sname);
+            SqlConnection con4 = new SqlConnection(@"Data Source=LAPTOP-0A88PDVH\SQLEXPRESS;Database=college;Integrated Security = True");
+            con4.Open();
+            SqlCommand cmd = new SqlCommand("select * from category where userid = '"+sid+"'", con4);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            con4.Close();
+
         }
     }
 }

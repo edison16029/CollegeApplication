@@ -25,7 +25,7 @@ namespace WindowsFormsApplication4
 
         private void button5_Click(object sender, EventArgs e)
         {
-            satffdetails a = new satffdetails();
+            staffdetails a = new staffdetails();
             a.Show();
             this.Hide();
         }
@@ -43,17 +43,11 @@ namespace WindowsFormsApplication4
             a.Show();
             this.Hide();
         }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            addquestion a = new addquestion();
-            a.Show();
-            this.Hide();
-        }
+      
 
         private void button6_Click(object sender, EventArgs e)
         {
-            userdetails a = new userdetails();
+            studentdetails a = new studentdetails();
             a.Show();
             this.Hide();
         }
@@ -70,6 +64,11 @@ namespace WindowsFormsApplication4
             Form1 a = new Form1();
             a.Show();
             this.Hide();
+        }
+
+        private void admin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

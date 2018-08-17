@@ -67,11 +67,12 @@ namespace WindowsFormsApplication4
             cmd.ExecuteNonQuery();
             con7.Close();
             MessageBox.Show("Question Added");
+            button2_Click(sender, e);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 a = new Form1();
+            staffs a = new staffs();
             a.Show();
             this.Hide();
         }

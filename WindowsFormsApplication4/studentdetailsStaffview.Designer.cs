@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication4
 {
-    partial class userdetails
+    partial class studentdetailsStaffview
     {
         /// <summary>
         /// Required designer variable.
@@ -35,33 +35,35 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(202, 61);
+            this.dataGridView1.Location = new System.Drawing.Point(226, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(525, 234);
+            this.dataGridView1.Size = new System.Drawing.Size(507, 419);
             this.dataGridView1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(803, 369);
+            this.button1.Location = new System.Drawing.Point(821, 429);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(107, 51);
             this.button1.TabIndex = 1;
-            this.button1.Text = "HOME";
+            this.button1.Text = "BACK";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // userdetails
+            // studentdetailsStaffview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1120, 452);
+            this.ClientSize = new System.Drawing.Size(1001, 507);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "userdetails";
-            this.Text = "userdetails";
-            this.Load += new System.EventHandler(this.userdetails_Load);
+            this.Name = "studentdetailsStaffview";
+            this.Text = "studentdetailsStaffview";
+            this.Load += new System.EventHandler(this.studentdetailsStaffview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

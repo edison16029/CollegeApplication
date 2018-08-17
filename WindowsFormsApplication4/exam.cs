@@ -11,14 +11,16 @@ using System.Data.SqlClient;
 
 namespace WindowsFormsApplication4
 {
-    public partial class Form3 : Form
+    public partial class exam : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-0A88PDVH\SQLEXPRESS;Database=college;Integrated Security = True");
         int qno = new int();
         int correct = new int();
         bool chosen = new bool();
         int maxqno = new int();
-        public Form3()
+        int sid;
+        string sname;
+        public exam()
         {
             InitializeComponent();
             qno = 1;
@@ -37,6 +39,11 @@ namespace WindowsFormsApplication4
             con.Close();
         }
 
+        public exam(int i,string s) : this()
+        {
+            sid = i;
+            sname = s;
+        }
     
 
         private void Form3_Load(object sender, EventArgs e)
@@ -52,6 +59,10 @@ namespace WindowsFormsApplication4
             }
             con.Close();
 
+            textBox1.Text = sid.ToString();
+            textBox2.Text = sname;
+            textBox1.Enabled = false;
+            textBox2.Enabled = false;
 
         }
 
@@ -79,7 +90,7 @@ namespace WindowsFormsApplication4
 
         public void goback()
         {
-            Form2 a = new Form2();
+            student a = new student(sid,sname);
             a.Show();
             this.Hide();
         }
@@ -179,7 +190,7 @@ namespace WindowsFormsApplication4
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form1 a = new Form1();
+            student a = new student(sid,sname);
             a.Show();
             this.Hide();
         }

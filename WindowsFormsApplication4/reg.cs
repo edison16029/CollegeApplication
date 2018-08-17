@@ -28,12 +28,13 @@ namespace WindowsFormsApplication4
             con5.Open();
             SqlCommand cmd = new SqlCommand("insert into users values('" + textBox1.Text + "','" + textBox2.Text + "','Not Approved')", con5);
             cmd.ExecuteNonQuery();
+            MessageBox.Show("Registered Successfully");
             con5.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 a = new Form1();
+            studentLogin a = new studentLogin();
             a.Show();
             this.Hide();
         }

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication4
 {
-    partial class Form1
+    partial class student
     {
         /// <summary>
         /// Required designer variable.
@@ -35,45 +35,45 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(418, 216);
+            this.button1.Location = new System.Drawing.Point(230, 179);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(119, 74);
             this.button1.TabIndex = 0;
-            this.button1.Text = "ADMIN";
+            this.button1.Text = "START TEST";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(539, 216);
+            this.button2.Location = new System.Drawing.Point(392, 179);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(122, 74);
             this.button2.TabIndex = 1;
-            this.button2.Text = "STAFF";
+            this.button2.Text = "VIEW PROGRESS";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(661, 216);
+            this.button3.Location = new System.Drawing.Point(598, 387);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 23);
+            this.button3.Size = new System.Drawing.Size(91, 42);
             this.button3.TabIndex = 2;
-            this.button3.Text = "STUDENT";
+            this.button3.Text = "LOGOUT";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // Form1
+            // student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1380, 506);
+            this.ClientSize = new System.Drawing.Size(804, 482);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "student";
+            this.Text = "student";
+            this.Load += new System.EventHandler(this.student_Load);
             this.ResumeLayout(false);
 
         }
@@ -85,4 +85,3 @@
         private System.Windows.Forms.Button button3;
     }
 }
-

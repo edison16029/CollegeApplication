@@ -49,11 +49,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(408, 191);
+            this.label1.Location = new System.Drawing.Point(382, 189);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 17);
+            this.label1.Size = new System.Drawing.Size(91, 17);
             this.label1.TabIndex = 1;
-            this.label1.Text = "USER ID";
+            this.label1.Text = "STUDENT ID";
             // 
             // textBox1
             // 
@@ -72,11 +72,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(408, 248);
+            this.label2.Location = new System.Drawing.Point(382, 246);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 17);
+            this.label2.Size = new System.Drawing.Size(117, 17);
             this.label2.TabIndex = 5;
-            this.label2.Text = "USER NAME";
+            this.label2.Text = "STUDENT NAME";
             // 
             // button2
             // 
@@ -101,6 +101,7 @@
             this.Controls.Add(this.button1);
             this.Name = "approvestudent";
             this.Text = "approvestudent";
+            this.Load += new System.EventHandler(this.approvestudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

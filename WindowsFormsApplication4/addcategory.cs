@@ -26,13 +26,19 @@ namespace WindowsFormsApplication4
             cmd.ExecuteNonQuery();
             con6.Close();
             MessageBox.Show("Category Added Successfully");
+            button2_Click(sender, e);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 a = new Form1();
+            admin a = new admin();
             a.Show();
             this.Hide();
+        }
+
+        private void addcategory_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

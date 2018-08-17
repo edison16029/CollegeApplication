@@ -11,14 +11,14 @@ using System.Data.SqlClient;
 
 namespace WindowsFormsApplication4
 {
-    public partial class userdetails : Form
+    public partial class studentdetailsStaffview : Form
     {
-        public userdetails()
+        public studentdetailsStaffview()
         {
             InitializeComponent();
         }
 
-        private void userdetails_Load(object sender, EventArgs e)
+        private void studentdetailsStaffview_Load(object sender, EventArgs e)
         {
             SqlConnection con4 = new SqlConnection(@"Data Source=LAPTOP-0A88PDVH\SQLEXPRESS;Database=college;Integrated Security = True");
             con4.Open();
@@ -28,11 +28,13 @@ namespace WindowsFormsApplication4
             da.Fill(dt);
             dataGridView1.DataSource = dt;
             con4.Close();
+            //  button1_Click(sender, e);
         }
+       
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            Form1 a = new Form1();
+            staffs a = new staffs();
             a.Show();
             this.Hide();
         }

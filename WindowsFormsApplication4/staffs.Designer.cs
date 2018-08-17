@@ -77,11 +77,11 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(793, 475);
+            this.button5.Location = new System.Drawing.Point(792, 432);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(107, 47);
             this.button5.TabIndex = 4;
-            this.button5.Text = "HOME";
+            this.button5.Text = "LOGOUT";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -97,6 +97,7 @@
             this.Controls.Add(this.button1);
             this.Name = "staffs";
             this.Text = "staffs";
+            this.Load += new System.EventHandler(this.staffs_Load);
             this.ResumeLayout(false);
 
         }

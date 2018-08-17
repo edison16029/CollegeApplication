@@ -82,17 +82,35 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="staffLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="staffLogin.Designer.cs">
+      <DependentUpon>staffLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="student.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="student.Designer.cs">
+      <DependentUpon>student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentLogin.Designer.cs">
+      <DependentUpon>studentLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="exam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exam.Designer.cs">
+      <DependentUpon>exam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminLogin.Designer.cs">
+      <DependentUpon>adminLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="performancecheck.cs">
       <SubType>Form</SubType>
@@ -114,11 +132,11 @@
     <Compile Include="reg.Designer.cs">
       <DependentUpon>reg.cs</DependentUpon>
     </Compile>
-    <Compile Include="satffdetails.cs">
+    <Compile Include="staffdetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="satffdetails.Designer.cs">
-      <DependentUpon>satffdetails.cs</DependentUpon>
+    <Compile Include="staffdetails.Designer.cs">
+      <DependentUpon>staffdetails.cs</DependentUpon>
     </Compile>
     <Compile Include="staffs.cs">
       <SubType>Form</SubType>
@@ -126,11 +144,17 @@
     <Compile Include="staffs.Designer.cs">
       <DependentUpon>staffs.cs</DependentUpon>
     </Compile>
-    <Compile Include="userdetails.cs">
+    <Compile Include="studentdetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="userdetails.Designer.cs">
-      <DependentUpon>userdetails.cs</DependentUpon>
+    <Compile Include="studentdetails.Designer.cs">
+      <DependentUpon>studentdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentdetailsStaffview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentdetailsStaffview.Designer.cs">
+      <DependentUpon>studentdetailsStaffview.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="addcategory.resx">
       <DependentUpon>addcategory.cs</DependentUpon>
@@ -144,17 +168,26 @@
     <EmbeddedResource Include="admin.resx">
       <DependentUpon>admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="adminLogin.resx">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="approvestudent.resx">
       <DependentUpon>approvestudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="staffLogin.resx">
+      <DependentUpon>staffLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="student.resx">
+      <DependentUpon>student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentLogin.resx">
+      <DependentUpon>studentLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="exam.resx">
+      <DependentUpon>exam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="performancecheck.resx">
       <DependentUpon>performancecheck.cs</DependentUpon>
@@ -174,15 +207,19 @@
     <EmbeddedResource Include="reg.resx">
       <DependentUpon>reg.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="satffdetails.resx">
-      <DependentUpon>satffdetails.cs</DependentUpon>
+    <EmbeddedResource Include="staffdetails.resx">
+      <DependentUpon>staffdetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="staffs.resx">
       <DependentUpon>staffs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="userdetails.resx">
-      <DependentUpon>userdetails.cs</DependentUpon>
+    <EmbeddedResource Include="studentdetails.resx">
+      <DependentUpon>studentdetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="studentdetailsStaffview.resx">
+      <DependentUpon>studentdetailsStaffview.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

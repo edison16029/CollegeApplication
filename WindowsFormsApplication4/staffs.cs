@@ -26,7 +26,7 @@ namespace WindowsFormsApplication4
 
         private void button4_Click(object sender, EventArgs e)
         {
-            userdetails a = new userdetails();
+            studentdetailsStaffview a = new studentdetailsStaffview();
             a.Show();
             this.Hide();
         }
@@ -40,7 +40,7 @@ namespace WindowsFormsApplication4
 
         private void button3_Click(object sender, EventArgs e)
         {
-            performancecheck a = new performancecheck();
+            performancecheck a = new performancecheck(1);
             a.Show();
             this.Hide();
         }
@@ -50,6 +50,11 @@ namespace WindowsFormsApplication4
             Form1 a = new Form1();
             a.Show();
             this.Hide();
+        }
+
+        private void staffs_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

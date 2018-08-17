@@ -14,11 +14,17 @@ namespace WindowsFormsApplication4
     public partial class performancecheck : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-0A88PDVH\SQLEXPRESS;Database=college;Integrated Security = True");
+        int i;
         public performancecheck()
         {
+            i = 0;
             InitializeComponent();
         }
 
+        public performancecheck(int x) : this()
+        {
+            i = x ;
+        }
         private void performancecheck_Load(object sender, EventArgs e)
         {
             
@@ -28,15 +34,24 @@ namespace WindowsFormsApplication4
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
-
             con.Close();
+          //  button1_Click(sender, e);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 a = new Form1();
-            a.Show();
-            this.Hide();
+            admin a = new admin();
+            staffs b = new staffs();
+            if (i == 0)
+            {
+                a.Show();
+                this.Hide();
+            }
+            else
+            {
+                b.Show();
+                this.Hide();
+            }
         }
     }
 }
