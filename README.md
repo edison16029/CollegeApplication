@@ -1,4 +1,5 @@
 # WindowsFormsApplication4
+Developed as Practice.
 Windows Application to simulate educational institution working with database access using .net framework
 
 About : 
